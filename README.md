@@ -10,7 +10,7 @@ Formally, the intact flow of this package as follows:<br>
 Besides, annother function `getterm.gene` is used to preprocess the document of GO database.<br>
 If users intend to screen all the dysregulation terms within one patient, they can choose to skip step2-4 and directly proceed with function `spairs` and `IndGOterm`.<br>
 ## Installation
-To install the IndGOterm, install from github using devtools <br>
+You can install it from Github using the devtools(https://github.com/r-lib/devtools "悬停指示") pakage<br>
 
 library(devtools)<br>
 ```
@@ -20,9 +20,10 @@ Or you can download the .ZIP file and unzip it.
 ```
 install.packages("IndGOterm",repos = NULL,type="source")
 ```
-#The "IndGOterm" should be combined with the absolute path.<br>
+### The "IndGOterm" should be combined with the absolute path.<br>
 
-
-
+## Contact email
+Please don't hesitate to address comments/questions/suggestions regarding this R package to: Jiashuai Zhang <br>
+zjs772835346@163.com
 
 

@@ -6,6 +6,7 @@ Formally, the intact flow of this package as follows:<br>
 * Screening of candidate disease-related-terms use function `get.globdysterm`<br>
 * Screening of nonredundant disease-related-terms use function `remove.redundance`<br>
 * Individual application use function `IndGOterm`<br>
+
 Besides, annother function `getterm.gene` is used to preprocess the document of GO database.<br>
 If users intend to screen all the dysregulation terms within one patient, they can choose to skip step2-4 and directly proceed with function `spairs` and `IndGOterm`.<br>
 ## Installation

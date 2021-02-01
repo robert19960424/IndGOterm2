@@ -1,7 +1,7 @@
-#IndGOterm
+# IndGOterm
 IndGOterm is a tool for screening dysregulation terms from personalized patients
-##Install
-To install the IndGOterm, install from github using devtools<br>
+## Install
+To install the IndGOterm, install from github using devtools <br>
 
 library(devtools)
 install_github("huitingxiao/TICPE")

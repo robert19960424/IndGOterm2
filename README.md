@@ -1,4 +1,4 @@
-# IndGOterm
+IndGOterm
 ======
 IndGOterm is a tool for screening dysregulation terms from personalized patients
 # Install

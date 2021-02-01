@@ -1,7 +1,9 @@
 IndGOterm
+
 ======
 IndGOterm is a tool for screening dysregulation terms from personalized patients
-# Install
+Install
+----
 To install the IndGOterm, install from github using devtools
 
 library(devtools)

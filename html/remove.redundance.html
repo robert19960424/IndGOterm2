@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: remove redundant pathway</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for remove.redundance {IndGOterm}"><tr><td>remove.redundance {IndGOterm}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>remove redundant pathway</h2>
+
+<h3>Description</h3>
+
+<p>this function is used to remove redundant parent or son pathway from all of global dyregulated terms
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+remove.redundance(
+  stable.pair,
+  reverse.pair,
+  gene.minimum = 1,
+  patients,
+  re_graph,
+  holidyregpath,
+  term_gene_list,
+  threads = 1L
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>stable.pair</code></td>
+<td>
+<p>a matrix or data.frame of stable pairs from normal samples with two columns, the first column is the higher expresion gene , the second column is the lower expresion gene.By default the variables are taken from environment(formula).</p>
+</td></tr>
+<tr valign="top"><td><code>reverse.pair</code></td>
+<td>
+<p>a matrix or data.frame of reverse pairs from disease samples with two columns, the first column is the higher expresion gene , the second column is the lower expresion gene.By default the variables are taken from environment(formula).</p>
+</td></tr>
+<tr valign="top"><td><code>patients</code></td>
+<td>
+<p>a dataset containing tumor samples , the first column must be the geneID ,and tumor samples start with the second column.By default the variables are a dataset with 2003 colorectal cancer samples taken from environment(formula).</p>
+</td></tr>
+<tr valign="top"><td><code>re_graph</code></td>
+<td>
+<p>a matrix or data.frame with three columns about the relationship between parent term and whose son term. The first to third column is parent termID, son termID and distance between parent term and son term separately</p>
+</td></tr>
+<tr valign="top"><td><code>holidyregpath</code></td>
+<td>
+<p>a matrix or data.frame with three columns depicts the coorelation levels of terms and disease. Which computed by method get.holidyregpath. The first to third column is termID, p-value and FDR value.</p>
+</td></tr>
+<tr valign="top"><td><code>term_gene_list</code></td>
+<td>
+<p>a list containing term genes. each list name is termID and the content of each list is the genes containing in the term.</p>
+</td></tr>
+<tr valign="top"><td><code>threads</code></td>
+<td>
+<p>an integer value to make sure how many threads would be used to complete the computation</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a list.The first list is all terms and their redundant parent terms. of all the nonredundant holistic-dyregulated pathway
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>IndGOterm</em> version 1.0.0 <a href="00Index.html">Index</a>]</div>
+</body></html>

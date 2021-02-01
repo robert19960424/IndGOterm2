@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: get reverse pairs from all the tumor samples</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for revpairs {IndGOterm}"><tr><td>revpairs {IndGOterm}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>get reverse pairs from all the tumor samples</h2>
+
+<h3>Description</h3>
+
+<p>the function is used to get reverse pairs from a host of disease samples.
+this function support parallel computation . You need to set thread numbers to make sure how many threads do you need to use .
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+revpairs(
+  stable.pair,
+  patients,
+  threshold = 0.05,
+  spairs_threshold = 0.99,
+  threads = 1L,
+  capacity = 300000L
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>stable.pair</code></td>
+<td>
+<p>a matrix or data.frame of stable pairs from normal samples with two columns, the first column is the higher expresion gene , the second column is the lower expresion gene.By default the variables are taken from environment(formula).</p>
+</td></tr>
+<tr valign="top"><td><code>patients</code></td>
+<td>
+<p>a dataset containing tumor samples , the first column must be the geneID ,and tumor samples start with the second column.By default the variables are taken from environment(formula).</p>
+</td></tr>
+<tr valign="top"><td><code>threshold</code></td>
+<td>
+<p>a numeric value which is used to control false discovery rate under the p_value of the chip-square test or fisher exact probability test , default is 0.05.</p>
+</td></tr>
+<tr valign="top"><td><code>spairs_threshold</code></td>
+<td>
+<p>a threshold used in function &quot;spairs&quot; to stipulate the circumstance of retaining a gene pair as a stable pair</p>
+</td></tr>
+<tr valign="top"><td><code>threads</code></td>
+<td>
+<p>an integer value to make sure how many threads you will use to complete the computation</p>
+</td></tr>
+<tr valign="top"><td><code>capacity</code></td>
+<td>
+<p>an integer value to depict the computation capacity, ruling how many lines of stable pairs would be computed withiin one time.the default is 300000</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a matrix containing four columns respectively represent higher expression gene , lower expression gene , p_value under binomial distribution , false discovery rate under p.adjust
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>IndGOterm</em> version 1.0.0 <a href="00Index.html">Index</a>]</div>
+</body></html>

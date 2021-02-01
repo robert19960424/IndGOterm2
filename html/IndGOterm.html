@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: The main function of individPath</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for IndGOterm {IndGOterm}"><tr><td>IndGOterm {IndGOterm}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>The main function of individPath</h2>
+
+<h3>Description</h3>
+
+<p>The function is used to compute individual dyregulated pathway.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+IndGOterm(
+  stable.pair,
+  term,
+  patients,
+  threads = 1L,
+  gene.minimum = 1L,
+  threshold = 0.05,
+  term_gene_list,
+  non_redun
+)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>stable.pair</code></td>
+<td>
+<p>a matrix or data.frame of stable pairs from normal samples with two columns, the first column is the higher expresion gene , the second column is the lower expresion gene.By default the variables are taken from environment(formula).</p>
+</td></tr>
+<tr valign="top"><td><code>patients</code></td>
+<td>
+<p>a dataset containing tumor samples , the first column must be the geneID ,and tumor samples start with the second column.By default the variables are taken from environment(formula).</p>
+</td></tr>
+<tr valign="top"><td><code>threads</code></td>
+<td>
+<p>an integer value to make sure how many threads you will use to complete the computation</p>
+</td></tr>
+<tr valign="top"><td><code>threshold</code></td>
+<td>
+<p>a numeric value which is used to control false discovery rate under the p_value of the chip-square test or fisher exact probability test , default is 0.05.</p>
+</td></tr>
+<tr valign="top"><td><code>non_redun</code></td>
+<td>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>a list contained two data.frame , individual dyregulated pathway with term ID and individual dyregulated pathway with term name
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>IndGOterm</em> version 1.0.0 <a href="00Index.html">Index</a>]</div>
+</body></html>

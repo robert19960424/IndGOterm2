@@ -1,11 +1,11 @@
 # IndGOterm
 The `IndGOterm` package is a tool for screening dysregulation terms from personalized patients.<br>
 Formally, the intact flow of this package as follows:<br>
-    * Screening of stable gene pairs use function `spairs`<br>
-    * Screening of reverse gene pairs use function `revpairs`<br>
-    * Screening of candidate disease-related-terms use function `get.globdysterm`<br>
-    * Screening of nonredundant disease-related-terms use function `remove.redundance`<br>
-    * Individual application use function `IndGOterm`<br>
+* Screening of stable gene pairs use function `spairs`<br>
+* Screening of reverse gene pairs use function `revpairs`<br>
+* Screening of candidate disease-related-terms use function `get.globdysterm`<br>
+* Screening of nonredundant disease-related-terms use function `remove.redundance`<br>
+* Individual application use function `IndGOterm`<br>
 ## Installation
 To install the IndGOterm, install from github using devtools <br>
 

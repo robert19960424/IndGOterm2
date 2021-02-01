@@ -12,8 +12,8 @@ If users intend to screen all the dysregulation terms within one patient, they c
 ## Installation
 You can install it from Github using the devtools(https://github.com/r-lib/devtools) pakage<br>
 
-library(devtools)<br>
 ```
+library(devtools)<br>
 install_github("robert19960424/IndGOterm")
 ```
 Or you can download the .ZIP file and unzip it.

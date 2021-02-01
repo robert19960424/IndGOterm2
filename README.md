@@ -5,10 +5,10 @@ To install the IndGOterm, install from github using devtools <br>
 
 library(devtools)<br>
 ```
-install_github("huitingxiao/TICPE")<br>
+install_github("jiashuaizhang/IndGOterm")<br>
 ```
-Or you can download the .ZIP file and unzip it.<br>
+Or you can download the .ZIP file and unzip it.
 ```
-install.packages("IndGOterm",repos = NULL,type="source")<br>
+install.packages("IndGOterm",repos = NULL,type="source")
 ```
 #The "IndGOterm" should be combined with the absolute path.<br>

@@ -20,7 +20,6 @@ Or you can download the .ZIP file and unzip it.
 ```
 install.packages("IndGOterm",repos = NULL,type="source")
 ```
-### The "IndGOterm" should be combined with the absolute path.<br>
 
 ## Contact email
 Please don't hesitate to address comments/questions/suggestions regarding this R package to: Jiashuai Zhang <br>

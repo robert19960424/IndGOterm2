@@ -14,7 +14,7 @@ You can install it from Github using the devtools(https://github.com/r-lib/devto
 
 library(devtools)<br>
 ```
-install_github("jiashuaizhang/IndGOterm")
+install_github("robert19960424/IndGOterm")
 ```
 Or you can download the .ZIP file and unzip it.
 ```

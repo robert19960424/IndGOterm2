@@ -10,7 +10,7 @@ Formally, the intact flow of this package as follows:<br>
 Besides, annother function `getterm.gene` is used to preprocess the document of GO database.<br>
 If users intend to screen all the dysregulation terms within one patient, they can choose to skip step2-4 and directly proceed with function `spairs` and `IndGOterm`.<br>
 ## Installation
-You can install it from Github using the [devtools](https://github.com/r-lib/devtools "悬停显示") pakage<br>
+You can install it from Github using the [devtools](https://github.com/r-lib/devtools) pakage<br>
 
 ```
 library(devtools)
